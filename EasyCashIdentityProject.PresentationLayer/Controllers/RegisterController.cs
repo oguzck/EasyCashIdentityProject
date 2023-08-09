@@ -62,7 +62,7 @@ namespace EasyCashIdentityProject.PresentationLayer.Controllers
                     client.Disconnect(true);
 
 
-
+                    TempData["Mail"] = appUserRegisterDto.Email;
                     return RedirectToAction("Index","ConfirmMail");
                 }
                 else
